@@ -6,15 +6,123 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <style type="text/css">
+        .form {
+            width: 800px;
+            height: 1000px;
+            border: 2px black;
+            position: absolute;
+            font-size: 18px;
+            left: 25%;
+        }
+
+        #name,
+        #date,
+        #number,
+        #email,
+        #weight,
+        #growth,
+        #kilo,
+        #sport,
+        #diet,
+        #changeinfigure,
+        #typefigure,
+        #hour,
+        #work {
+            width: 100%;
+
+        }
+
+        body {
+            background-image: url(mainfont.jpg);
+        }
+
+        .buton {
+            background-color: white;
+            height: 50px;
+            width: 100px;
+        }
+
+        .allbutton {
+            margin-left: 590px
+        }
+    </style>
 </head>
 
 <body>
-    <form method="POST" action="https://formspree.io/ulyana_MK@ukr.net">
-        <label for="client"> Tell about yourself:</label>
-        <input id="client" type="text" placeholder="TEXT" name="client" required />
-       <br>
-        <input type="submit" name="" />
-        <input type="reset" name="" />
-    </form>
+    <div class="form">
+
+        <form method="POST" action="https://formspree.io/ulyana_MK@ukr.net">
+            <fieldset>
+                <label for="name"> Ваше Ф.І.П.:
+        <input id="name" type="text" name="name" required />
+        </label><br><br>
+
+                <label for="date"> Дата народження:
+        <input id="date"  type="date" name="date" required/>
+         
+        </label><br><br>
+
+                <label for="number"> Номер телефону:
+        <input id="number" type="tel" name="number" required />
+        </label><br><br>
+
+                <label for="email"> Електронна пошта:
+        <input id="email" type="email" name="email" required />
+        </label><br><br>
+
+                <label for="weight"> Вага:
+        <input id="weight" type="number" name="weight" required /> 
+        </label><br><br>
+
+                <label for="growth"> Ріст:
+        <input id="growth" type="number" name="growth" required />
+        </label><br><br>
+
+                <label for="kilo"> Скільки кг хочете скинути:
+        <input id="kilo" type="number" name="kilo" required />
+        </label><br><br>
+
+                <label for="sport"> Яким спортом займаєтесь, скільки годин на тиждень:
+        <input id="sport" type="text" name="sport" required />
+        </label><br><br>
+
+                <label for="diet"> Ваш раціон харчування на день (включно напитки і всі перекуси) і години прийому їжі:
+        <input id="diet" type="text" name="diet" required />
+        </label><br><br> Вид роботи:
+                <input type="radio" id="sitting" name="sitting" value="create" />
+                <label for="sitting"><i>Сидяча</i></label>
+
+                <input type="radio" id="standing" name="standing" value="create" />
+                <label for="standing"><i>Стояча</i></label>
+
+                <br><br>
+
+                <label for="changeinfigure"> Що хочете змінити у вашій фігурі:
+        <input id="changeinfigure" type="text" name="changeinfigure" required />
+        </label><br><br>
+
+                <label for="typefigure"> Тип вашоїї фігури:
+        
+        <select id="typefigure" name="typefigure" required  >
+       <option></option>
+       <option>Груша</option>
+       <option>V-форма</option>
+       <option>Буква Н</option>
+       <option>Пісочний годинник</option>
+       <option>Яблуко</option>
+        </select>
+
+        </label><br><br>
+            </fieldset>
+            <br>
+            <div class="allbutton">
+                <input type="submit" class="buton" name="Замовити" />
+                <input type="reset" class="buton" name="Оновити" />
+            </div>
+
+        </form>
+    </div>
 </body>
+
 </html>
