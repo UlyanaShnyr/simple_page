@@ -39,12 +39,14 @@
 
         .buton {
             background-color: white;
-            height: 30%;
-            width: 48%;
+            height: 40px;
+            width:30%;
+            background: -webkit-gradient(linear, 0 0, 0 100%, from(#895E08), to(#895E08), color-stop(0.5, #F2D59B));
+            
         }
 
         .allbutton {
-            margin-left: 590px
+          margin-left:10%;
         }
     </style>
 </head>
@@ -101,7 +103,7 @@
 
                 <label for="typefigure"> Тип вашоїї фігури:   
                     <select id="typefigure" name="typefigure" required  >
-                       <option value="">Обери один із:</option>
+                       <option label=" "></option>
                        <option value="pear">Груша</option>
                        <option value="vform">V-форма</option>
                        <option value="lettern">Буква Н</option>
@@ -115,7 +117,12 @@
             <div class="allbutton">
                 <input type="submit" class="buton" name="Замовити" />
                 <input type="reset" class="buton" name="Оновити" />
+                <input type="submit" class="buton" value="Повернутися на головну сторінку" onclick='location.href="https://ulyanashnyr.github.io/simple_page/index.html"'>
+                
             </div>
+            <form>
+                
+            </form>
         </form>
     </div>
 </body>
